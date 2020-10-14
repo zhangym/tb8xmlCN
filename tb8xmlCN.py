@@ -6,7 +6,7 @@ def func(m):
     return chr(int(m.group(1).title()))
 
 if len(sys.argv) != 2:
-        print("tb8xmlCN <inputFile>")
+        print("Usage：python tb8xmlCN <inputFile>")
 else:
     strfin =  sys.argv[1] + ".xml"
     strfout = sys.argv[1] + "_out.xml"
@@ -21,6 +21,7 @@ else:
     fout.write(newKey)
     fin.close()
     fout.close()
+    print("\nOK, Success!.\n")
 
 
 
